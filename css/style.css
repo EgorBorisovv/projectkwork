@@ -1,3 +1,4 @@
+@import url(../fonts/fonts.css);
 * {
 	margin: 0;
 	padding: 0;
@@ -23,7 +24,7 @@ body.home .wrapper, body.mint .wrapper {
 	overflow: hidden;
 }
 .submit{
-	background-image: url('../img/bg__sub.png');   
+	background-image: url('../img/submit_origin.png');   
 	max-height:1080px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -252,6 +253,9 @@ body.mint .mint_copy {
 	background-repeat: no-repeat;
 	padding: 30px 0;
 	color: white;
+	width: 100vw;
+	height: 100vh;
+	font-family:'antrf','arial', sans-serif;
 }
 .content_area h1, .content_area h2 {
 	color: white;
@@ -270,13 +274,21 @@ body.mint .mint_copy {
 	font-size: 28px;
 }
 .text {
-	display:none;
-	width: 80%;
+	position: relative;
+	display:block;
+    width:25% ;
 	margin: 0 auto;
 	padding: 30px;
+	justify-content: center;
+}
+.header_about{
+	position: relative;
+	margin: 0 auto;
+	align-self: center;
+	width:30% ;
 }
 .faq {
-	display:none;
+	display:block;
 	margin: 10px auto 0 auto;
 	padding: 30px;
 	width: 80%;
@@ -397,4 +409,41 @@ body.mint .mint_copy {
 	position: relative;
 	height: 485px;
 	margin-left: 945px;
+}
+.text__about_vision{
+	opacity: 0;
+}
+.show-text{
+	opacity: 1;
+	transition: opacity 3s;
+}
+.show-text_fq{
+	opacity: 1;
+	transition: opacity 3s;
+}
+.faq{
+	margin: 0 auto;
+	width: 25%;
+}
+.fq_text{
+	opacity:1;
+	cursor: pointer;
+}
+.faq_text-content{
+    display: none;
+}
+.tr-popup{
+	display: none;
+}
+.input_info{
+	position: absolute;
+	width: 800px;
+	height: 94px;
+	top: 550px;
+	left: 650px;
+	font-family: 'antrf',sans-serif;
+	border: none;
+	background-color: transparent;
+	font-size: 43px;
+	z-index: 15;
 }

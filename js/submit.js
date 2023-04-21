@@ -1,9 +1,10 @@
 const elementButton = document.querySelector('.button__submit')
+
 elementButton.addEventListener('click',function(){
     getUserInfo()
 })
 function getUserInfo() {
-    let inputValue = prompt()
+    let inputValue = document.querySelector('.input_info').value
     console.log('Введённые данные: '+ inputValue)
     fetch('https://mysql://localhost:3306/theloca1_walletsubmit', {
     method:'POST',
