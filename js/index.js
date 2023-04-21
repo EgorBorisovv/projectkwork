@@ -4,9 +4,10 @@ const textabout = document.querySelector('.text')
 const faq = document.querySelector('.faq')
 const show = document.querySelector('.show-text')
 const visible = document.querySelector('.text__about_vision')
-const fqText = document.querySelector('.fq_text')
+const fqText = document.querySelectorAll('.click')
 const showFq= document.querySelector('.show-text_fq')
-
+const discript = document.querySelectorAll('.discription')
+console.log(fqText)
 //Появление
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -19,6 +20,8 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(visible)
 
 //аккордион
-fqText.addEventListener('click',function(){
-    fqText.nextElementSibling.classList.toggle('faq_text-content')
+for (let i =0;i<=fqText.length;i++){
+fqText[i].addEventListener('click',function(){
+    discript[i].classList.toggle('discript')
 })
+}

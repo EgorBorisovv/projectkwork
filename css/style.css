@@ -445,11 +445,9 @@ body.mint .mint_copy {
 }
 .fq_text{
 	opacity:1;
-	cursor: pointer;
 }
-.faq_text-content{
-    display: none;
-}
+
+
 .tr-popup{
 	display: none;
 }
@@ -483,4 +481,26 @@ body.mint .mint_copy {
 	.input_info{
             top: 540px;
 	}
+}@media screen and (max-width:1669px) {
+	.input_info{
+            top: 500px;
+	}
+}
+.info_fq{
+	opacity: 1;
+}
+.discription{
+	opacity: 0;
+}
+.discript{
+	opacity:1;
+	transform: translateY(-20%);
+	animation: ani 2s forwards;
+}
+@keyframes ani {
+	0% {transform: translateX(-20%);}
+	100% {transform: translateY(0);}
+}
+.click{
+	cursor: pointer;
 }
