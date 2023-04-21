@@ -478,9 +478,9 @@ body.mint .mint_copy {
 	font-size: 43px;
 	z-index: 15;
 }
-@media screen and (max-width:1669px) {
+
+@media screen and (min-width:1920px) {
 	.input_info{
-            top: 52%;
-			left: 625px;
+            top: 540px;
 	}
 }
